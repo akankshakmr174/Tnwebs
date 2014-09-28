@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: django-galeria
+Version: 0.5
+Summary: Pluggable gallery/portfolio application for Django projects
+Home-page: https://bitbucket.org/semente/django-galeria/
+Author: Guilherme Gondim
+Author-email: semente+django-galeria@taurinus.org
+License: BSD License
+Description: ==============
+        Django Galeria
+        ==============
+        
+        **Django Galeria** is a pluggable gallery/portfolio application for
+        `Django Web Framework`_.
+        
+        It is a fork of Luka Cehovin's `django-gallery`.
+        
+        Project page
+            https://bitbucket.org/semente/django-galeria
+        Translations
+            https://www.transifex.net/projects/p/django-galeria/
+        
+        .. _`Django Web Framework`: http://www.djangoproject.com
+        
+        
+        Installing & Setup
+        ==================
+        
+        TODO
+        
+        
+        License
+        =======
+        
+        You should have received a copy of the BSD License along with this program; see
+        the file LICENSE.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

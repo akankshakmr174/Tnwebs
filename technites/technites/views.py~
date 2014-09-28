@@ -1,0 +1,2 @@
+from django_markdown.admin import MarkdownModelAdmin
+adimin.site.register(MyModel, MarkdownModelAdmin)

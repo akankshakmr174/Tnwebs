@@ -1,0 +1,100 @@
+{% load static %}
+<top>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Technites Homepage</title>
+    <meta name="description" content=""></meta>
+    <meta name="viewport" content="width=device-width"></meta>
+	 <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/main.css"></link>
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<header class="site-header" id="top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="logo-wrapper">
+                            <a class="navbar-brand" href="#">
+                                <em>Technites</em> 2014 
+                                <span class="logo-s"></span>
+                            </a>
+                        </div>  
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <span class="nav-s"></span>
+                            <li class="active"><a href="#top">Home</a></li>
+                            <li><a href="#blog-inner">Blog</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#login">Login</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+	<div class="top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-holder">
+                        place image here
+						<img src="" alt=""></img>
+                    </div>
+                </div>
+                <div class="col-md-6">
+				<h3>ABOUT US!</h3>
+				<p>We undertake projects with the aim of entertaining the masses turning up for Engineer, the technical fest of National Institute of Karnataka, Surathkal. The committee has been present for every edition of Engineer since 2008 and has turned into a platform for innovative technical projects that showcase the creative minds of the students of NITK.
+				</p>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div id="blog">
+        <div class="container">
+            <div class="row" id="blog-inner">
+                <div class="col-md-4 product-item text-center">
+                    <div class="image-holder">
+                        <img src="" alt=""></img>
+                    </div>
+                    <h4>Image</h4>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="circle">
+						javascript to be added here
+                        <h3>TECHNITES<br> The magicians of the afterdark</br></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 product-item text-center">
+                    <div class="image-holder">
+                        <img src="" alt=""></img>
+                    </div>
+                    <h4>Image</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="Gallery">
+        <div class="container" id="Grid">
+            <div class="row">
+                <div class="col-md-12 text-center title">
+                    <h2>Gallery</h2>
+                    <span>WHAT WE HAVE DONE</span>
+                </div>
+            </div>
+			mini-gallery comes here
+             </div>
+</div></top>

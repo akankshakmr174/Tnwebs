@@ -11,7 +11,17 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_DIR= os.path.dirname(__file__)
+BASE = os.path.abspath(os.path.dirname(__name__))
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 
+
+import os.path
+TEMPLATE_DIRS=(
+                 os.path.join(os.path.dirname(__file__), 'templates') .replace('\\', '/') ,
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -24,7 +34,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '127.0.0.1:8000', 'localhost:8000', '*',]
 
 
 # Application definition
@@ -41,6 +51,22 @@ INSTALLED_APPS = (
     'tinymce',
     'galeria',
     )
+
+
+STATIC_URL='/static/'
+STATICFILES_DIRS = (
+   '/home/akanksha/Django-1.6.5/technites/static_dir/',
+     # or whatever you named it
+)
+
+
+STATICFILES_FINDERS = (
+   'django.contrib.staticfiles.finders.FileSystemFinder',
+   'django.contrib.staticfiles.finders.AppDirectoriesFinder',)
+
+
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -83,7 +109,28 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+
+
+MEDIA_ROOT= os.path.join(PROJECT_PATH, 'media')
+
+MEDIA_URL= '/media/'
+
+
+
+
+
+STATICFILES_FINDERS = (
+   'django.contrib.staticfiles.finders.FileSystemFinder',
+   'django.contrib.staticfiles.finders.AppDirectoriesFinder',)
+
+
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    
+    'django.core.context_processors.static',
+     'django.contrib.auth.context_processors.auth',
+)
 
 DATABASES = {
     'default': {

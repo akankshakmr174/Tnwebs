@@ -1,0 +1,454 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Technites Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+	 <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link href="{% static 'css/bootstrap.min1.css' %}" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link href="{% static 'css/polygon.css' %}" rel="stylesheet">
+	
+  <script type='text/javascript' src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+  <script type='text/javascript' src="{% static 'js/jquery.particleground.min.js' %}"></script>
+  <script type='text/javascript' src="{% static 'js/demo.js' %}"></script>
+	<!--js-->
+    <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+	<script src="{% static 'js/jquery-1.10.2.min.js' %}"></script> 
+	<script src="{% static 'js/jquery.lightbox.js' %}"></script>
+	<script src="{% static 'js/templatemo_custom.js' %}"></script>
+    <script>
+    function showhide()
+    {
+    	var div = document.getElementById("newpost");
+		if (div.style.display !== "none")
+		{
+			div.style.display = "none";
+		}
+		else {
+			div.style.display = "block";
+		}
+    }
+  	</script>
+
+</head>
+<header class="site-header" id="top" style="background-image:url('{% static 'images/gallery/Cube.jpg' %}');">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container" >
+                <div class="row">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="logo-wrapper">
+                            <a class="navbar-brand" href="#">
+                                <em>Technites</em> 2014 
+                                <span class="logo-s"></span>
+                            </a>
+                        </div>  
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <span class="nav-s"></span>
+                            <li class="active"><a href="#top">Home</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#video">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </header>
+	
+    <iframe src="/particle/" border="none" width="100%" height="700px" frameborder="0"></iframe>
+	
+	<div id="blog">
+        <div class="container">
+            <div class="row" id="blog-inner">
+                <div class="col-md-4 product-item text-center">
+                    <div class="image-holder">
+                        <img src="{ 'images/tn-left.jpg' %}" alt="" height="350px" width="425px" align="right">
+                    </div>
+                    <h4></h4>
+                </div>
+                <div class="col-md-4">
+                    <div class="circle" color="yellow" style="background-image:url('{% static 'images/gallery/circ.jpg' %}');">
+			<font color="yellow">			
+                        <h3>Our awesome events in gallery below!</h3>
+                        </font>
+                    </div>
+                </div>
+                <div class="col-md-4 product-item text-center">
+                    <div class="image-holder">
+                        <img src="{ 'images/tn-right.jpg' %}" alt=""height="350px" width="425px" align="left">
+                    </div>
+                    <h4></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div id="gallery" >
+        <div class="container" id="Grid">
+            <div class="row">
+                <div class="col-md-12 text-center title">
+					<!-- need to use for loop here-->
+                <!-- gallery start -->
+    
+    <div class="content homepage" id="menu-1" >
+    <div class="container" >
+	    <div class="row templatemorow" >
+    		<div class="hex col-sm-6" >
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/mp.jpg' %}');">
+             	 	<div class="overlay">
+						<a href="{% static 'images/gallery/mp.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/blitz.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/blitz.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/ddr_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/ddr_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/psych_room.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/psych_room.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/water_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/water_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  	     <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/bluecube.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/bluecube.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/prop_f.png' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/prop_f.png' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/globe_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/globe_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+             <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/infinite_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/infinite_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</div>
+	</div>
+    <div  id="newpost" style="display:none;" class="container answer_list templatemo_gallerytop">
+	    <div class="row templatemorow">
+    		<div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/stron_f.jpg' %}');">
+             	 	<div class="overlay">
+						<a href="{% static 'images/gallery/stron_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/arcade_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/arcade_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/pin_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/pin_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/liq_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/liq_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+             <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/contra_p.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/contra_p.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  	     <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/15.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/15.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+               <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/light_liq_f.jpg' %}');">
+              	<div class="overlay">
+						<a href="{% static 'images/gallery/light_liq_f.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+               <div class="hexagon-in2" style="background-image: url('{% static 'images/gallery/1.jpg' %}');">
+              	<div class="overlay" >
+
+						<a href="{% static 'images/gallery/1.jpg' %}" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/18.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/18.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</div>
+	</div>
+    <div class="container">
+    	<div class="row">
+        	<div class="templatemo_loadmore">
+			 <button class="gallery_more" id="button" onClick="showhide()">Load More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+      <!-- gallery end -->
+				</div>
+            </div>
+			</div>
+				<div id="bottom-section" >
+				<div class="container" id="video" >
+				<div class="row">
+				<div class="col-md-6">
+                    <div class="left-one text-center">
+                        <h1><em>About Us</em></h1>
+                        <p size="24px">We undertake projects with the aim of entertaining the masses turning up for Engineer, the technical fest of National Institute of Karnataka, Surathkal. The committee has been present for every edition of Engineer since 2008 and has turned into a platform for innovative technical projects that showcase the creative minds of the students of NITK.
+				<p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-4" >
+                    <div class="video-holder text-center" >
+                        <h3>TECHNITES </h3>
+                       <iframe width="560" height="315" src="http://www.youtube.com/embed/yL7O-BEwdvM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">The after dark awaits.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-pull-11">
+                    <div class="team-member">
+                        <img src="{% static 'images/gallery/1.jpg' %}" class="img-responsive img-circle" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Technites is a committee that makes you think out of the box, nurtures your ideas and helps them grow and hence helping you grow. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <div id="contact">		
+   <section id="contact-us" class="bg-black">
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <div class="team-member">
+                        <img src="{% static 'images/gallery/oshim.jpg' %}" class="img-responsive img-circle" alt="">
+                        <h4>Oshim Jain</h4>
+                        <p class="text-muted">Convener</p>
+                        <ul class="list-inline social-buttons">
+                            <li>oshim.jain09@gmail.com</li>
+                        </ul>
+						<ul class="list-inline social-buttons">
+                            <li>8951814512</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="team-member">
+                        <img src="{% static 'images/gallery/amit.jpg' %}" class="img-responsive img-circle" alt="">
+                        <h4>Amit Raj</h4>
+                        <p class="text-muted">Convenor</p>
+                        <ul class="list-inline social-buttons">
+                            <li>amit1993in@gmail.com</li>
+                        </ul>
+						<ul class="list-inline social-buttons">
+                            <li>9731282765</li>
+                        </ul>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>	
+</div>
+		<footer>
+        <div class="container">
+            <div class="row">
+		<div class="col-md-6 col-sm-6">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                    </ul>
+                </div>
+			</div>
+			</div>
+			</footer>

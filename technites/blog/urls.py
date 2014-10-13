@@ -9,7 +9,7 @@ class BlogFeed(Feed):
 	link="/blog/feed"
 	
 	def items(self):
-		return Post.objects.all().order_by("-created")[:2]
+		return Post.objects.all().order_by("-created")
 	def item_title(self,item):
 		return item.title
 	def item_description(self, item):
@@ -18,7 +18,7 @@ class BlogFeed(Feed):
 		return u"/blog/%d" % item.id
 
 urlpatterns = patterns('blog.views',
-    url(r'^$', ListView.as_view(queryset=Post.objects.all().order_by("-created")[:2],template_name="blog.html")),
+    url(r'^$', ListView.as_view(queryset=Post.objects.all().order_by("-created"),template_name="blog1.html")),
 
     url(r'^(?P<pk>\d*)$', DetailView.as_view(model=Post,template_name="post.html")),
 

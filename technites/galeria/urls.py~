@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+
+from django.conf.urls import patterns, url, include
+
+from galeria import views
+
+
+urlpatterns = patterns('galeria.views',
+    url(
+        '^(?P<album_slug>[-\w]+)/(?P<pk>[0-9]+)/(?P<slug>[-\w]+)/$',
+        views.PictureDetail.as_view(),
+        name='galeria-picture'
+    ),
+    url(
+        '^(?P<slug>[-\w]+)/$',
+        views.AlbumDetail.as_view(),
+        name='galeria-album', template_name="album_detail.html"
+    ),
+    url('^$', views.AlbumList.as_view(), name='galeria-album-list', template_name="album_list.html"),
+)
